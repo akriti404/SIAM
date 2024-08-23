@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #2f375e;
+            color: #ffffff;
+            font-family: "Gill Sans", "Segoe UI", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .game{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .main-title, .subtitle {
+            color: rgba(255, 255, 255, 0.6); 
+            cursor: pointer; 
+            transition: color 0.3s ease; 
+        }
+
+        .main-title:hover, .subtitle:hover,
+        .restart-btn:hover, .score:hover {
+            color: #ffffff;
+        }
+
+        .main-title {
+            font-size: 50px;
+            letter-spacing: 3px;
+            font-weight: 700; 
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .game-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            opacity: 0.75;
+        }
+
+        .restart-btn{
+            color:black;
+            font-weight: 700;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .score {
+            color:white;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+
+        .restart-btn {
+            background-color: #727b90;
+            font-family: "Gill Sans", "Segoe UI", Arial, sans-serif;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; 
+            transition: background-color 0.3s ease;
+        }
+
+        .restart-btn i {
+            font-size: 16px; 
+            color:black
+        }
+
+        .restart-btn:hover {
+            background-color: #bdc5de;
+            color: #ffffff;
+        }
+
+        .score {
+            font-size: 18px;
+        }
+
+        .game-box {
+            width: 500px;
+            height: 500px;
+            background-color: #0a1228;
+            position: relative;
+            margin: auto;
+        }
+
+        .snake {
+            width: 20px;
+            height: 20px;
+            background-color: #00ff08;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            border: 0.75px solid #00ff08;
+            box-shadow: 0px 0px 6px #ffffff;
+        }
+
+        .food {
+            width: 20px;
+            height: 20px;
+            background-color: #ff1100;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            border: 0.75px solid #ff1100;
+            box-shadow: 0px 0px 6px #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game">
+        <div class="title">
+            <span class="main-title">SNAKE</span>
+            <span class="subtitle">by SIAM-VIT</span>
+        </div>
+
+        <div class="game-header">
+            <button class="restart-btn">
+                <i class="fas fa-play"></i> RESTART
+            </button>
+            <span class="score">SCORE: 0</span>
+        </div>
+
+        <div class="game-box">
+            <div class="snake"></div>
+            <div class="food"></div>
+        </div>
+    </div>
+</body>
+</html>
