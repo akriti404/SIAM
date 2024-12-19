@@ -17,8 +17,7 @@
             </div>
         </div>
         <div class="connect">
-            <p>Connect with me:</p>
-            <a href="mailto:example@email.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            <p>Check out:</p>
             <a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
             <a href="https://www.github.com" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
@@ -62,5 +61,22 @@
             <li><strong>Best Women Team at XYZ Hackathon</strong></li>
         </ul>
     </div>
+
+    <div class="contact-section">
+        <button id="contact-btn" onclick="openModal()">Contact Me</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="closeModal()">Close</button>
+            </form>
+        </div>
+    </div>
+    <script src="portfolio_js.js"></script>
 </body>
 </html>
