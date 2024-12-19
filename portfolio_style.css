@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8B6B61;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.main-header, .about-me, .technical-skills, .projects, .experience {
+    background-color: #D9C2B0;
+    border: 2px solid #B29684;
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #A37B71;
+    margin-right: 20px;
+}
+
+.profile h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #4E3D37;
+}
+
+.profile p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #6B5146;
+}
+
+.connect {
+    text-align: right;
+}
+
+.connect p {
+    margin: 0 0 10px;
+    font-size: 1.1em;
+    color: #4E3D37;
+}
+
+.connect a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4E3D37;
+    font-size: 1.5em;
+}
+
+.connect a:hover {
+    color: #A37B71;
+}
+
+.about-me h2, .technical-skills h2, .projects h2, .experience h2 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #4E3D37;
+}
+
+.about-me ul, .projects-list, .experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #6B5146;
+    font-size: 1.1em;
+}
+
+.about-me li, .projects-list li, .experience-list li {
+    margin-bottom: 10px;
+    color: #4E3D37;
+}
+
+.about-me strong, .projects-list strong, .experience-list strong {
+    color: #4E3D37;
+}
+
+.technical-skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technical-skills .skills-list li {
+    background-color: #6B5146;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.main-header:hover, 
+.about-me:hover, 
+.technical-skills:hover, 
+.projects:hover, 
+.experience:hover {
+    background-color: #C5A994; 
+    transform: scale(1.02); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-header:active, 
+.about-me:active, 
+.technical-skills:active, 
+.projects:active, 
+.experience:active {
+    background-color: #B29684; 
+    transform: scale(0.98); 
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
