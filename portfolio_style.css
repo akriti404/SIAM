@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +10,11 @@ body {
     padding-top: 20px;
 }
 
-.main-header, .about-me, .technical-skills, .projects, .experience {
+.main-header, 
+.about-me, 
+.technical-skills, 
+.projects, 
+.experience {
     background-color: #D9C2B0;
     border: 2px solid #B29684;
     border-radius: 12px;
@@ -73,13 +77,18 @@ body {
     color: #A37B71;
 }
 
-.about-me h2, .technical-skills h2, .projects h2, .experience h2 {
+.about-me h2, 
+.technical-skills h2, 
+.projects h2, 
+.experience h2 {
     font-size: 1.8em;
     margin: 0 0 10px;
     color: #4E3D37;
 }
 
-.about-me ul, .projects-list, .experience-list {
+.about-me ul, 
+.projects-list, 
+.experience-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -87,12 +96,16 @@ body {
     font-size: 1.1em;
 }
 
-.about-me li, .projects-list li, .experience-list li {
+.about-me li, 
+.projects-list li, 
+.experience-list li {
     margin-bottom: 10px;
     color: #4E3D37;
 }
 
-.about-me strong, .projects-list strong, .experience-list strong {
+.about-me strong, 
+.projects-list strong, 
+.experience-list strong {
     color: #4E3D37;
 }
 
@@ -131,4 +144,96 @@ body {
     background-color: #B29684; 
     transform: scale(0.98); 
     transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#contact-btn {
+    background-color: #6B5146;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-btn:hover {
+    background-color: #4E3D37;
+    transform: scale(1.05);
+}
+
+#contact-btn:active {
+    background-color: #3B2B26;
+    transform: scale(0.95);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #D9C2B0;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #4E3D37;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #B29684;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.modal-content input,
+.modal-content textarea {
+    background-color: #F5EDE6;
+    color: #4E3D37;
+}
+
+.modal-content textarea {
+    resize: none;
+    height: 100px;
+}
+
+.modal-content button {
+    background-color: #6B5146;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #4E3D37;
 }
